@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="tableBD" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+  <tabs>
+    <Tab text="Courses">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <TableView fx:id="tableCourses" prefHeight="374.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="tableCoursesID" prefWidth="32.0" text="id" />
+                <TableColumn fx:id="tableCoursesTitle" prefWidth="260.0" text="title" />
+                <TableColumn fx:id="tableCoursesLength" minWidth="0.0" prefWidth="42.0" text="length" />
+                <TableColumn fx:id="tableCoursesDescription" prefWidth="264.0" text="description" />
+              </columns>
+            </TableView>
+          </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Lessons">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutY="7.0" prefHeight="364.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn prefWidth="116.0" text="id" />
+                      <TableColumn prefWidth="88.0" text="teacher" />
+                        <TableColumn prefWidth="70.0" text="course" />
+                        <TableColumn prefWidth="123.0" text="room" />
+                        <TableColumn prefWidth="202.0" text="lesson_date" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab><Tab text="Teachers">
+    <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView prefHeight="372.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="id" />
+                      <TableColumn prefWidth="75.0" text="name" />
+                        <TableColumn prefWidth="75.0" text="addr" />
+                        <TableColumn prefWidth="75.0" text="phone" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+    </content>
+  </Tab><Tab text="Users">
+    <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutX="-2.0" prefHeight="370.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn prefWidth="78.0" text="id" />
+                      <TableColumn prefWidth="104.0" text="firstName" />
+                        <TableColumn prefWidth="87.0" text="lastName" />
+                        <TableColumn prefWidth="84.0" text="email" />
+                        <TableColumn prefWidth="114.0" text="login" />
+                        <TableColumn prefWidth="132.0" text="password" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+    </content>
+  </Tab>
+  </tabs>
+</TabPane>
